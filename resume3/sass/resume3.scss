@@ -1,0 +1,126 @@
+
+$darkcolor: #2c3c94;
+$color:  #acb3da;
+$width:100%;
+
+@mixin rectangle($width,$color,$height){
+    width:$width;
+    background-color: $color;
+    height: $height;
+    text-align:left;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    width: $width;
+    height: $width;
+}
+
+.resume{
+    margin: 1%;
+    overflow: auto;
+    width: $width;
+}
+.resume__left{
+    width: $width/4;
+    overflow: auto;
+    float: left;
+    margin: 5%;
+    //background-color: aqua;
+}
+.resume__right{
+    width:($width -($width/4)) - 18%;
+    overflow: auto;
+    float: left;
+   // background-color: aqua;
+    margin:{
+        top: 5%;
+        bottom: 5%;
+        right: 5%;
+    }
+}
+.resume__left .resume--picture{
+    margin-left: 15%;
+    margin-top: 1%;
+}
+.img{
+    border-radius: 50%;
+    padding: 5px;
+    background-color:$darkcolor;
+}
+.resume__left .resume--profile{
+    width:$width;
+    overflow: auto;
+}
+.resume--profile .rectangle{
+   @include rectangle($width,$color, 30px )
+}
+
+.resume__left .resume--reference{
+    width:$width;
+    overflow: auto;
+}
+.resume--reference .rectangle{
+    @include rectangle($width,$color, 30px )
+}
+
+.resume__right .resume--experience{
+    width:$width;
+    overflow: auto;
+}
+.resume--experience .rectangle{
+    @include rectangle($width,$color, 30px )
+}
+.resume__right .resume--education{
+    width:$width;
+    overflow: auto;
+}
+.resume--education .rectangle{
+    @include rectangle($width,$color, 30px )
+}
+.resume__right .resume--interest{
+    width:$width;
+    overflow: auto;
+}
+.resume--interest .rectangle{
+    @include rectangle($width,$color, 30px )
+}
+.resume__right .resume--skills{
+    width:$width;
+    overflow: auto;
+}
+.resume--skills .rectangle{
+    @include rectangle($width,$color, 30px )
+}
+
+p{
+    padding-left: $width/7;
+    padding-top:5px;
+    padding-bottom: 5px;
+    text-align: justify;
+    
+}
+
+@media only screen and (max-width: 680px) {
+    .resume{
+        margin: 0; 
+        width: 100%;
+    }
+    .resume__left{
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .resume__right{
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    p{
+        margin:2%;
+    }
+    
+}
+
