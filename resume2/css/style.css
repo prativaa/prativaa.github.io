@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    
+}
+.header{
+    height: 20px !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    background-color: rgb(230, 181, 21);
+}
+.intro{
+    margin: 5%;
+    width: 95%;
+    overflow: auto;
+}
+
+.intro_pic{
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+.intro_about{
+    width: 70%;
+    float: left;
+    margin-left: 5%;
+    height:20%;
+}
+.content{
+    margin: 5%;
+    overflow: auto;
+}
+
+.content .content__achievements{
+    width: 40%;
+    float: left;
+}
+
+.content .content__programs{
+    margin-left: 5%;
+    width: 45%;
+    float: left;   
+
+}
+.content--header{
+    height: 10%;
+    background-color:  rgb(230, 181, 21);
+    border: 1px solid rgb(230, 181, 21);
+    border-radius: 7px;
+}
+.content--header p{
+    text-align: center;
+    color: black;
+    padding: 1px;
+}
+
+.content__achievements .content--pictures{
+    margin: 5%;
+    overflow: auto;
+
+}
+.content--pictures .content--icon{
+    height: 30%;
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.content--icon .content--icondesc{
+    width: 35%;
+    text-align: center;
+
+}
+.content__programs .content--description{
+    margin-top: 5%;
+    background-color:  rgb(230, 181, 21);
+    overflow: auto;
+    border: 1px solid rgb(230, 181, 21);
+    border-radius: 7px;
+}
+.content__programs .content--evaluation{
+    height: 50%;
+    width: 35%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.content--evaluation .content--evaluationdesc{
+    width: 35%;
+    text-align: center;
+    color:black;
+}
+.timeline{
+    margin: 5%;
+    overflow: auto;
+}
+.timeline .timeline__header{
+    height: 12%;
+    background-color:  rgb(230, 181, 21);
+    border: 1px solid rgb(230, 181, 21);
+    border-radius: 7px;
+    text-align: center;
+    color: black;
+}
+.timeline .timeline__event{
+    overflow: auto;
+    margin: 1%;
+    overflow: auto;
+}
+.timeline__event .timeline--icon{
+    width: 100%;
+    overflow: auto;
+    margin-top: 2%;
+}
+.timeline__event .timeline--icon-image{
+    float: left;
+    margin-right: 1%;
+}
+.timeline__event .timeline--detail{
+    float: left;
+    margin-left: 2%;
+    text-align: justify;
+}
+.footer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 12%;
+    width: 100%;
+    background-color: rgb(230, 181, 21);
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+    .header{
+        height: 100%;
+    }
+    .intro_pic{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: none;
+    }
+    .intro_about{
+        width: 100%;
+        margin:0;
+        padding: 0;
+        height:20%;
+        font-size: 1em;
+        text-align: justify;
+    }
+    .content .content__achievements{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content .content__programs{
+        width: 100%;    
+        margin: 0;
+        padding: 0;
+    }
+    .footer{
+        height: 100%;
+    }
+
+
+}
+
