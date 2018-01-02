@@ -1,0 +1,107 @@
+$width: 100%;
+$color:rgb(5, 85, 85);
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;    
+    color: white;
+    text-align: center;
+}
+.profile{
+    margin-top: 2%;
+    width: $width;
+    height: $width;
+    overflow: auto;
+
+}
+.profile__header{
+    width: $width;
+    height: $width/10; 
+    //background-color: rgb(54, 52, 52);
+    background-color: $color;
+
+}
+.profile__header .profile--navigation{
+    
+}
+.profile__information{
+    margin-top: 20%;
+    margin-left: $width/10;
+    margin-right: $width/10;
+    overflow: auto;
+
+}
+.profile__information .profile--story{
+    width: $width/4;
+    padding-right: 2%;
+    float: left;
+    overflow: auto;
+
+}
+.profile__information .profile--pic{
+    width: $width/3.6;
+    padding-right: 2%;
+    float: left;
+    overflow: auto;
+}
+
+.img{
+    padding: 10px;
+    background-color: $color;
+}
+.profile__information .profile--personalinfo{
+    width: $width/3.6;
+    float: left;
+
+}
+h4{
+    color: $color;
+    text-align: center;
+}
+p{
+    color: black;
+    text-align: justify;
+    padding:10px;
+}
+button{
+    height: 30px;
+    background-color: $color;
+    color: white;
+}
+
+@media only screen and (max-width: 680px) {
+    h1{ 
+        font-size: 1.3rem;
+    
+    }
+    .profile__information{
+        width: 100%;
+        margin: 1%;        
+    }
+    .profile__information .profile--story{
+        width: 100%;
+        margin: 1%;
+        float: none;
+    }
+    .profile__information .profile--pic{
+        width: 100%;
+        margin: 1%;
+        float: none;
+    }
+    
+    .img{
+        padding: 10px;
+        background-color: $color;
+    }
+    .profile__information .profile--personalinfo{
+        width: 100%;
+        margin: 1%;
+        float: none;
+    
+    }
+    
+
+    
+}
