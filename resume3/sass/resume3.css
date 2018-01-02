@@ -30,7 +30,7 @@ body {
 .img {
   border-radius: 50%;
   padding: 5px;
-  background-color: #2c3c94; }
+  background-color: #055555; }
 
 .resume__left .resume--profile {
   width: 100%;
@@ -38,7 +38,7 @@ body {
 
 .resume--profile .rectangle {
   width: 100%;
-  background-color: #acb3da;
+  background-color: #059494;
   height: 30px;
   text-align: left; }
 
@@ -48,7 +48,7 @@ body {
 
 .resume--reference .rectangle {
   width: 100%;
-  background-color: #acb3da;
+  background-color: #059494;
   height: 30px;
   text-align: left; }
 
@@ -58,7 +58,7 @@ body {
 
 .resume--experience .rectangle {
   width: 100%;
-  background-color: #acb3da;
+  background-color: #059494;
   height: 30px;
   text-align: left; }
 
@@ -68,7 +68,7 @@ body {
 
 .resume--education .rectangle {
   width: 100%;
-  background-color: #acb3da;
+  background-color: #059494;
   height: 30px;
   text-align: left; }
 
@@ -78,7 +78,7 @@ body {
 
 .resume--interest .rectangle {
   width: 100%;
-  background-color: #acb3da;
+  background-color: #059494;
   height: 30px;
   text-align: left; }
 
@@ -88,7 +88,7 @@ body {
 
 .resume--skills .rectangle {
   width: 100%;
-  background-color: #acb3da;
+  background-color: #059494;
   height: 30px;
   text-align: left; }
 
