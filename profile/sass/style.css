@@ -22,15 +22,28 @@ body {
   margin-right: 10%;
   overflow: auto; }
 
-.profile__information .profile--story {
+.profile__information .profile--boundary {
+  overflow: auto;
+  border-top: 5px;
+  border-bottom: 5px;
+  border-right: none;
+  border-left: none;
+  border-style: normal;
+  border-color: #055555; }
+
+.profile--boundary .profile--story {
   width: 25%;
   padding-right: 2%;
+  padding-top: 2%;
   float: left;
-  overflow: auto; }
+  overflow: auto;
+  padding-bottom: 2%; }
 
-.profile__information .profile--pic {
+.profile--boundary .profile--pic {
   width: 27.7777777778%;
   padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   float: left;
   overflow: auto; }
 
@@ -38,8 +51,10 @@ body {
   padding: 10px;
   background-color: #055555; }
 
-.profile__information .profile--personalinfo {
+.profile--boundary .profile--personalinfo {
   width: 27.7777777778%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   float: left; }
 
 h4 {
@@ -55,6 +70,27 @@ button {
   height: 30px;
   background-color: #055555;
   color: white; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #055555; }
+
+li {
+  float: center; }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111; }
 
 @media only screen and (max-width: 680px) {
   h1 {
@@ -81,6 +117,9 @@ button {
   .profile__information .profile--personalinfo {
     width: 100%;
     margin: 1%;
+    float: none; }
+
+  li {
     float: none; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,16 +33,29 @@ body{
     overflow: auto;
 
 }
-.profile__information .profile--story{
+.profile__information .profile--boundary{
+    overflow: auto;
+    border-top: 5px;
+    border-bottom: 5px;
+    border-right: none;
+    border-left: none;
+    border-style: normal;
+    border-color: $color;
+}
+.profile--boundary .profile--story{
     width: $width/4;
     padding-right: 2%;
+    padding-top:2%;
     float: left;
     overflow: auto;
+    padding-bottom: 2%;
 
 }
-.profile__information .profile--pic{
+.profile--boundary .profile--pic{
     width: $width/3.6;
     padding-right: 2%;
+    padding-top:2%;
+    padding-bottom: 2%;
     float: left;
     overflow: auto;
 }
@@ -51,8 +64,10 @@ body{
     padding: 10px;
     background-color: $color;
 }
-.profile__information .profile--personalinfo{
+.profile--boundary .profile--personalinfo{
     width: $width/3.6;
+    padding-top: 2%;
+    padding-bottom: 2%;
     float: left;
 
 }
@@ -69,6 +84,30 @@ button{
     height: 30px;
     background-color: $color;
     color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $color;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
 
 @media only screen and (max-width: 680px) {
@@ -100,6 +139,9 @@ button{
         margin: 1%;
         float: none;
     
+    }
+    li{
+        float: none;
     }
     
 

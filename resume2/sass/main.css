@@ -1,180 +1,76 @@
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%; }
+/*
+Error: Undefined variable: "$width-".
+        on line 40 of Resume.scss
 
-.header {
-  height: 20px !important;
-  width: 100%;
-  background-color: #e6b515; }
-  .header .margin {
-    top: 5%;
-    bottom: 5%; }
+35:     height: $width/5;
+36:     float: left;
+37: }
+38: 
+39: .intro_about{
+40:     width: $width-($width/5);
+41:     float: left;
+42:     margin-left: 5%;
+43:     height: $width/5;
+44: }
+45: 
 
-.intro {
-  margin: 5%;
-  width: 95%;
-  overflow: auto; }
-
-.intro_pic {
-  width: 20%;
-  height: 20%;
-  float: left; }
-
-.intro_about {
-  width: 70%;
-  float: left;
-  margin-left: 5%;
-  height: 20%; }
-
-.content {
-  margin: 5%;
-  width: 100%;
-  overflow: auto; }
-
-.content .content__achievements {
-  width: 42.194092827%;
-  float: left;
-  margin-right: 5%; }
-
-.content .content__programs {
-  width: 42.194092827%;
-  float: left; }
-
-.content--header {
-  height: 10%;
-  background-color: #e6b515;
-  width: 100%;
-  border-width: 1px;
-  border-color: #e6b515;
-  border-radius: 7px;
-  border-style: none; }
-
-.content--header p {
-  text-align: center;
-  color: black;
-  margin: 1px; }
-
-.content__achievements .content--pictures {
-  margin-top: 5%;
-  overflow: auto;
-  width: 100%;
-  border-width: 1px;
-  border-color: #e6b515;
-  border-radius: 7px;
-  border-style: none; }
-
-.content--pictures .content--icon {
-  height: 50%;
-  width: 33.8983050847%;
-  float: left;
-  margin-left: 10%;
-  margin-top: 5%; }
-
-.content--icon .content--icondesc {
-  width: 35%;
-  text-align: center; }
-
-.content__programs .content--description {
-  margin-top: 5%;
-  overflow: auto;
-  background-color: #e6b515;
-  width: 100%;
-  border-width: 1px;
-  border-color: #e6b515;
-  border-radius: 7px;
-  border-style: none; }
-
-.content__programs .content--evaluation {
-  height: 50%;
-  width: 33.8983050847%;
-  float: left;
-  margin-left: 10%;
-  margin-top: 5%; }
-
-.content--evaluation .content--evaluationdesc {
-  width: 35%;
-  text-align: center;
-  color: black; }
-
-.timeline {
-  margin: 5%;
-  overflow: auto; }
-
-.timeline .timeline__header {
-  height: 12%;
-  background-color: #e6b515;
-  text-align: center;
-  color: black;
-  width: 100%;
-  border-width: 1px;
-  border-color: #e6b515;
-  border-radius: 7px;
-  border-style: none; }
-
-.timeline .timeline__event {
-  overflow: auto;
-  margin: 1%;
-  overflow: auto; }
-
-.timeline__event .timeline--icon {
-  width: 100%;
-  overflow: auto;
-  margin-top: 2%; }
-
-.timeline__event .timeline--icon-image {
-  float: left;
-  margin-right: 1%; }
-
-.timeline__event .timeline--detail {
-  float: left;
-  margin-left: 2%;
-  text-align: justify; }
-
-.footer {
-  height: 12%;
-  width: 100%;
-  background-color: #e6b515;
-  color: black;
-  text-align: center; }
-  .footer .margin {
-    top: 5%;
-    bottom: 5%; }
-
-p {
-  text-align: center;
-  color: black; }
-
-@media only screen and (max-width: 680px) {
-  .header {
-    height: 100%; }
-
-  .intro_pic {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    float: none; }
-
-  .intro_about {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 20%;
-    font-size: 1em;
-    text-align: justify; }
-
-  .content .content__achievements {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-
-  .content .content__programs {
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-
-  .footer {
-    height: 100%; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+Resume.scss:40
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/script/tree/node.rb:50:in `perform'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/script/tree/list_literal.rb:75:in `map'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/script/tree/node.rb:50:in `perform'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/stack.rb:135:in `with_frame'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/stack.rb:79:in `with_base'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/stack.rb:135:in `with_frame'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/stack.rb:79:in `with_base'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/pratibha/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$width-\".\A         on line 40 of Resume.scss\A \A 35:     height: $width/5;\A 36:     float: left;\A 37: }\A 38: \A 39: .intro_about{\A 40:     width: $width-($width/5);\A 41:     float: left;\A 42:     margin-left: 5%;\A 43:     height: $width/5;\A 44: }\A 45: "; }
