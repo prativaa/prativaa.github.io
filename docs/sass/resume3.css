@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+.resume {
+  margin: 1%;
+  overflow: auto;
+  width: 100%; }
+
+.resume__left {
+  width: 25%;
+  overflow: auto;
+  float: left;
+  margin: 5%; }
+
+.resume__right {
+  width: 57%;
+  overflow: auto;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%; }
+
+.resume__left .resume--picture {
+  margin-left: 15%;
+  margin-top: 1%; }
+
+.img {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #055555; }
+
+.resume__left .resume--profile {
+  width: 100%;
+  overflow: auto; }
+
+.resume--profile .rectangle {
+  width: 100%;
+  background-color: #059494;
+  height: 30px;
+  text-align: left; }
+
+.resume__left .resume--reference {
+  width: 100%;
+  overflow: auto; }
+
+.resume--reference .rectangle {
+  width: 100%;
+  background-color: #059494;
+  height: 30px;
+  text-align: left; }
+
+.resume__right .resume--experience {
+  width: 100%;
+  overflow: auto; }
+
+.resume--experience .rectangle {
+  width: 100%;
+  background-color: #059494;
+  height: 30px;
+  text-align: left; }
+
+.resume__right .resume--education {
+  width: 100%;
+  overflow: auto; }
+
+.resume--education .rectangle {
+  width: 100%;
+  background-color: #059494;
+  height: 30px;
+  text-align: left; }
+
+.resume__right .resume--interest {
+  width: 100%;
+  overflow: auto; }
+
+.resume--interest .rectangle {
+  width: 100%;
+  background-color: #059494;
+  height: 30px;
+  text-align: left; }
+
+.resume__right .resume--skills {
+  width: 100%;
+  overflow: auto; }
+
+.resume--skills .rectangle {
+  width: 100%;
+  background-color: #059494;
+  height: 30px;
+  text-align: left; }
+
+p {
+  padding-left: 14.2857142857%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: justify; }
+
+@media only screen and (max-width: 680px) {
+  .resume {
+    margin: 0;
+    width: 100%; }
+
+  .resume__left {
+    width: 100%;
+    margin: 0;
+    float: none; }
+
+  .resume__right {
+    width: 100%;
+    margin: 0;
+    float: none; }
+
+  p {
+    margin: 2%; } }
+
+/*# sourceMappingURL=resume3.css.map */
